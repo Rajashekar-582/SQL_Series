@@ -1,0 +1,156 @@
+/*create table it_team_details(
+  employId int not null ,
+  first_name varchar(10),
+  last_name varchar(10),
+  date_of_birth date,
+  city varchar(10),
+  marital_status bool,
+  phone_no int(10)
+  );*/
+  
+  /*insert into it_team_details values
+  (1,"suresh","Reddy",'2001-06-06',"Knr","True",9191035674),(2,"Ramesh","patel",'2002-07-06',"hyd","True",9191036780),(3,"kiran","Reddy",'2001-08-06',"sec","True",9191035009),(4,"ram","Kumar",'2001-09-06',"warangal","True",9191099023),(5,"Raja","shekar",'2001-19-06',"Jgl","True",919102345);
+  */
+  
+  /*alter table it_team_details
+  add Qualification varchar(10);*/
+  
+  
+ /* insert into it_team_details (employId,qualification) values(1,"btech"),(2,"bsc"),(3,"degree"),(4,"btech"),(5,"degree");*/
+ 
+ /*create table emp(
+   empId int not null ,
+   ename varchar(10),
+   salary int,
+   deptId int,
+   primary key (empId,deptId)
+   );*/
+  /* insert into it_team_detail (qualification) values(("btech"),("bsc"),("degree"),("btech"),("degree"));*/
+   
+   /*create table it_team_detail(
+  employId int not null ,
+  first_name varchar(10),
+  last_name varchar(10),
+  date_of_birth date,
+  city varchar(10),
+  marital_status bool,
+  phone_no int(10),
+     primary key(employId)
+  );
+   */
+   
+ /*  insert into it_team_detail values
+  (1,"suresh","Reddy",'2001-06-06',"Knr","True",9191035674),
+  (2,"Ramesh","patel",'2002-07-06',"hyd","True",9191036780),
+  (3,"kiran","Reddy",'2001-08-06',"sec","True",9191035009),
+  (4,"ram","Kumar",'2001-09-06',"warangal","True",9191099023),
+  (5,"Raja","shekar",'2001-19-06',"Jgl","True",919102345);*/
+  
+  /* alter table it_team_detail
+  add Qualification varchar(10);*/
+  
+  
+  /*select * from it_team_detail;
+  
+  select employId,first_name,last_name from it_team_detail;*/
+  
+  
+  /*select * from it_team_detail where employId=2*/
+  
+  /*alter table emp add Qualification varchar(10);*/
+  /*insert into emp values (3,"vinay",3000,3,"bsc");*/
+  /*select * from emp;
+  select empId,ename,salary from emp where salary > 1000;*/
+  /*select empId,ename,salary from emp where salary in (1000,2000);*/
+ /* select * from emp;*/
+/* select * from emp  order by  salary desc limit 1,2;*/
+
+====================================================================================
+
+//*create table operations_team(
+  emp_id int not null,
+  f_name varchar(10),
+  l_name varchar(10),
+  task_id int,
+  on_time_tasks int,
+  total_tasks int,
+  points int,
+  city varchar(10),
+  state varchar(10),
+  is_promoted bool,
+  primary key(emp_id)
+  );*/
+ /* create table dev_team
+  (
+    emp_id int not null,
+  f_name varchar(10),
+  l_name varchar(10),
+  task_id int,
+    In_progress_tasks int,
+    total_tasks int,
+    demerits int,
+    city varchar(10),
+    state varchar(10),
+    is_promoted bool,
+    primary key(emp_id)
+    );*/
+    /*create table testing_team
+    (
+      emp_id int not null,
+  f_name varchar(10),
+  l_name varchar(10),
+      test_case_id int,
+      case_resolved bool,
+      accuracy float,
+      points int,
+      city varchar(10),
+      state varchar(10),
+      is_promoted bool,
+      primary key(emp_id)
+      );*/
+   -- alter table dev_team add year_of_joining year;
+      /*alter table operations_team add year_of_graduation year;
+      alter table dev_team add year_of_graduation year;
+      alter table testing_team add year_of_graduation year;
+      alter table operations_team add year_of_joining date;
+      
+      alter table testing_team add year_of_joining date;
+      */
+     /* insert into operations_team values
+        (1,"raja","shekar",1,1,10,100,"hyderabad","Telanagana","true",2023,2017),
+        (2,"ram","kumar",2,2,20,200,"chennai","tamil nadu","true",2022,2017),
+        (3,"suresh","reddy",3,3,30,300,"mumbai","maharastra","false",2023,2019),
+        (4,"haristha","gupta",4,4,40,400,"hyderabad","telanagana","true",2020,2016);
+       */
+      /*insert into dev_team values
+       (1,"preeti","kumar",1,10,20,1,"hyderabad","telanagana","false",2023,2020),
+       (2,"Axar","patel",2,20,30,4,"chennai","tamil nadu","true",2024,2019),
+       (3,"Rohit","sharama",3,30,5,3,"mumbai","maharastra","true",2022,2018);*/
+       
+       /*insert into testing_team values
+  (101,'Muthyam','Harshitha',01,5,50.2,50,'Mumbai','Maharastra',true,2020,2024),
+  (102,'Muthyam','Sahasra',02,6,99.6,30,'Hyderabad','Telanagna',true,2018,2023),
+  (103,'Muthyam','Sravani',03,8,23.5,55,'Chennai','TN',false,2014,2020),
+  (104,'S','Harsh',01,5,90.3,50,'Mumbai','Maharastra',true,2015,2025),
+  (105,'S','sas',01,5,10.5,50,'Hyderabad','Telangana',true,2018,2020);*/
+  
+  --operations table
+ --select * from operations_team order by total_tasks desc limit 1;
+ --select * from operations_team where city="hyderabad" order by points asc limit 1;
+ --select * from operations_team where is_promoted ="true" and city="mumbai";
+ --select * from operations_team where city="mumbai" order by year_of_joining desc limit 1;
+ 
+ --Dev table
+ --select * from dev_team where city="hyderabad" order by demerits desc limit 1;
+ --select * from dev_team where city="chennai" order by year_of_joining asc limit 1;
+
+ /*insert into dev_team values
+  (101,'Muthyam','Harshitha',01,5,10,2,'Mumbai','Maharastra',true,2020,2024),
+  (102,'Muthyam','Sahasra',02,6,12,3,'Hyderabad','Telanagna',true,2018,2023),
+  (103,'Muthyam','Sravani',03,8,10,5,'Chennai','TN',false,2014,2020),
+  (104,'S','Harsh',01,5,10,2,'Mumbai','Maharastra',true,2015,2025),
+  (105,'S','sas',01,5,10,1,'Hyderabad','Telangana',true,2018,2020);*/
+  
+ -- select city,sum(in_progress_tasks) from dev_team group by city;
+  
+  
